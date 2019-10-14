@@ -3,6 +3,7 @@ package com.example.fragments;
 import android.os.Bundle;
 
 import com.example.fragments.fragments.FarajFragment;
+import com.example.fragments.fragments.OrignalEbra;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.fragment.app.Fragment;
@@ -25,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
         fragments.add(new FarajFragment());
         names.add("Faraj");
+
         //TODO every add you'r fragment & name like above
+
+        fragments.add(new OrignalEbra());
+        names.add("Orig_Ebra");
 
 
 
