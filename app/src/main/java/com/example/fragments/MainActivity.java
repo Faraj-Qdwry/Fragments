@@ -1,0 +1,40 @@
+package com.example.fragments;
+
+import android.os.Bundle;
+
+import com.example.fragments.fragments.FarajFragment;
+import com.google.android.material.tabs.TabLayout;
+
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        ArrayList<String> names = new ArrayList();
+        ArrayList<Fragment> fragments = new ArrayList();
+
+
+        fragments.add(new FarajFragment());
+        names.add("Faraj");
+        //TODO every add you'r fragment & name like above
+
+
+
+        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), fragments, names);
+
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        viewPager.setAdapter(sectionsPagerAdapter);
+
+        TabLayout tabs = findViewById(R.id.tabs);
+        tabs.setupWithViewPager(viewPager);
+    }
+}
