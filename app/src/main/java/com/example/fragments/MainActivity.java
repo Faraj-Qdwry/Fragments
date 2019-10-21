@@ -24,11 +24,10 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> names = new ArrayList();
         ArrayList<Fragment> fragments = new ArrayList();
 
+        //TODO every add you'r fragment & name like above
 
         fragments.add(new FarajFragment());
         names.add("Faraj");
-
-        //TODO every add you'r fragment & name like above
 
         fragments.add(new OrignalEbra());
         names.add("Orig_Ebra");
