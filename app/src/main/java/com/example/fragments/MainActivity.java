@@ -3,6 +3,7 @@ package com.example.fragments;
 import android.os.Bundle;
 
 import com.example.fragments.fragments.FarajFragment;
+import com.example.fragments.fragments.MatinFragment;
 import com.example.fragments.fragments.OrignalEbra;
 import com.google.android.material.tabs.TabLayout;
 
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(new OrignalEbra());
         names.add("Orig_Ebra");
 
-
+        fragments.add(new MatinFragment());
+        names.add("Matin");
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), fragments, names);
 
