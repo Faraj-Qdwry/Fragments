@@ -2,6 +2,7 @@ package com.example.fragments;
 
 import android.os.Bundle;
 
+import com.example.fragments.fragments.AtyaFragment;
 import com.example.fragments.fragments.FarajFragment;
 import com.example.fragments.fragments.MatinFragment;
 import com.example.fragments.fragments.OrignalEbra;
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
         fragments.add(new FarajFragment());
         names.add("Faraj");
+
+        fragments.add(new AtyaFragment());
+        names.add("Ebra Atya");
 
         fragments.add(new OrignalEbra());
         names.add("Orig_Ebra");
