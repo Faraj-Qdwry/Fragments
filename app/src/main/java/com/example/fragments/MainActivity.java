@@ -2,6 +2,7 @@ package com.example.fragments;
 
 import android.os.Bundle;
 
+import com.example.fragments.fragments.AtyaFragment;
 import com.example.fragments.fragments.FarajFragment;
 import com.example.fragments.fragments.MatinFragment;
 import com.example.fragments.fragments.OrignalEbra;
@@ -24,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> names = new ArrayList();
         ArrayList<Fragment> fragments = new ArrayList();
 
+        //TODO every add you'r fragment & name like above
 
         fragments.add(new FarajFragment());
         names.add("Faraj");
 
-        //TODO every add you'r fragment & name like above
+        fragments.add(new AtyaFragment());
+        names.add("Ebra Atya");
 
         fragments.add(new OrignalEbra());
         names.add("Orig_Ebra");
